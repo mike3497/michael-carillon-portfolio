@@ -1,0 +1,17 @@
+.circle-icon a {
+    display: block;
+    color: var(--white);
+    border: 1px solid var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px;
+    transition: 0.5s;
+}
+
+.circle-icon a:hover {
+    color: var(--black);
+    background-color: var(--white);
+}

@@ -1,0 +1,38 @@
+.experience-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.experience-list li button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    line-height: 1;
+    padding: 8px;
+    color: var(--gray500);
+}
+
+.experience-list li button.active {
+    color: var(--black);
+    border-left: 2px solid var(--green);
+}
+
+.experience-list li button:hover {
+    cursor: pointer;
+}
+
+.languages-list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 16px 0 0;
+}
+
+.languages-list li {
+    padding: 0 0 8px 0;
+}
+
+.languages-list li i {
+    color: var(--green);
+}
