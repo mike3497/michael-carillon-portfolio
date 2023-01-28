@@ -1,7 +1,4 @@
 import React from 'react';
-import headshotPhoto from '../imgs/headshot.jpeg';
-import brutusPhoto from '../imgs/brutus.jpeg';
-import couplePhoto from '../imgs/michael-and-katherine.jpeg';
 
 export const AboutMe = () => {
 	return (
@@ -42,21 +39,21 @@ export const AboutMe = () => {
 			<div className="row">
 				<div className="col-sm-4">
 					<img
-						src={headshotPhoto}
+						src="/imgs/headshot.jpeg"
 						className="img-fluid mb-1"
 						alt="Michael Carillon Headshot"
 					/>
 				</div>
 				<div className="col-sm-4">
 					<img
-						src={couplePhoto}
+						src="/imgs/michael-and-katherine.jpeg"
 						className="img-fluid mb-1"
 						alt="Michael & Katherine"
 					/>
 				</div>
 				<div className="col-sm-4">
 					<img
-						src={brutusPhoto}
+						src="/imgs/brutus.jpeg"
 						className="img-fluid"
 						alt="Brutus the Coonhound"
 					/>
