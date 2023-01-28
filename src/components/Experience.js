@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Experience.css';
+import Button from './ui/Button';
 
 export const Experience = () => {
 	const [selectedIndex, setSelectedIndex] = useState(2);
@@ -203,6 +204,11 @@ export const Experience = () => {
 							<i className="fa-solid fa-caret-right"></i> SQL
 						</li>
 					</ul>
+					<div className="mt-2">
+						<Button>
+							<i className="fa-solid fa-download"></i> Resume
+						</Button>
+					</div>
 				</div>
 			</div>
 		</div>
