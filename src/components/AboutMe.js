@@ -39,18 +39,18 @@ export const AboutMe = () => {
 					</p>
 				</div>
 			</div>
-			<div className="row mb-8">
+			<div className="row">
 				<div className="col-sm-4">
 					<img
 						src={headshotPhoto}
-						className="img-fluid"
+						className="img-fluid mb-1"
 						alt="Michael Carillon Headshot"
 					/>
 				</div>
 				<div className="col-sm-4">
 					<img
 						src={couplePhoto}
-						className="img-fluid"
+						className="img-fluid mb-1"
 						alt="Michael & Katherine"
 					/>
 				</div>

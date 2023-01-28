@@ -19,8 +19,8 @@ export const Experience = () => {
 				</div>
 			</div>
 			<div className="row mb-2">
-				<div className="col-sm-4">
-					<ul className="experience-list">
+				<div className="col-lg-4">
+					<ul className="experience-list mb-4">
 						<li>
 							<button
 								data-index="0"
@@ -50,7 +50,7 @@ export const Experience = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="col-sm-8">
+				<div className="col-lg-8">
 					{selectedIndex === 0 && (
 						<div>
 							<p className="small mb-1">Acme Fresh Market</p>
@@ -169,7 +169,7 @@ export const Experience = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-sm-8">
+				<div className="col-lg-8">
 					<p>
 						I am a web developer with 2 years of experience in designing and
 						developing responsive websites and web applications. I am proficient

@@ -3,16 +3,17 @@ import { Header } from './components/Header';
 import { AboutMe } from './components/AboutMe';
 import { Experience } from './components/Experience';
 import { ContactMe } from './components/ContactMe';
+import { Fragment } from 'react';
 
 function App() {
 	return (
-		<div>
+		<Fragment>
 			<Header />
 			<AboutMe />
 			<Experience />
 			{/* <ContactMe /> */}
 			<Footer />
-		</div>
+		</Fragment>
 	);
 }
 
