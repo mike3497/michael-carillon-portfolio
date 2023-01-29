@@ -59,45 +59,49 @@ export const Experience = () => {
 							</p>
 							<p className="small">December 2017 - October 2020</p>
 							<p>
-								Maintain the digital shelf for all items on e-commerce platform,
-								including editing product and brand descriptions to make them
-								customer-facing and adding product images for items that do not
-								have images using a custom content management system
+								Created customer-facing recipe page on website and back-end way
+								to manage recipes
 							</p>
 							<p>
-								Merchandise products within the e-commerce platform to drive
+								Maintained the digital shelf for all items on e-commerce
+								platform, including editing product and brand descriptions to
+								make them customer-facing and adding product images for items
+								that do not have images using a custom content management system
+							</p>
+							<p>
+								Merchandised products within the e-commerce platform to drive
 								traffic, conversion, and average order value by representing the
 								weekly ad online and simplifying customers’ online experience
 							</p>
 							<p>
-								Analyze Google Analytics Data and Apply knowledge to drive
-								conversion and basket size growth, and to suggest ways to
+								Analyzed Google Analytics Data and applied knowledge to drive
+								conversion and basket size growth, and suggested ways to
 								simplify customers’ online experience
 							</p>
 							<p>
-								Implement and create effective and innovative online
+								Implemented and created effective and innovative online
 								merchandising strategies to drive total online sales and
 								profitability
 							</p>
 							<p>
-								Manage the Placement of products that are displayed digitally
+								Managed the placement of products that are displayed digitally
 								across acmestores.com
 							</p>
 							<p>
-								Execute email campaigns to specific lists using Mailchimp, and
-								analyze performance of campaigns
+								Executed email campaigns to specific lists using Mailchimp, and
+								analyzed performance of campaigns
 							</p>
 							<p>
-								Post social media content using Later / Hootsuite or similar
+								Posted social media content using Later / Hootsuite and similar
 								social media management tool
 							</p>
 							<p>
-								Use Customer Relationship Management software and customer
-								database to manage promotions and create targeted groups, and to
-								provide analysis of the performance of promotions
+								Used Customer Relationship Management software and customer
+								database to manage promotions and created targeted groups, and
+								provided analysis of the performance of promotions
 							</p>
 							<p>
-								Create weekly store signage package using custom web-based
+								Created weekly store signage package using custom web-based
 								platform
 							</p>
 						</div>
@@ -109,42 +113,46 @@ export const Experience = () => {
 							<p className="bold mb-1">Associate Technical Consultant</p>
 							<p className="small">October 2020 - April 2022</p>
 							<p>
-								Participate in the full application life cycle from technical
+								Worked on implementing new user stories and fixing bugs for a
+								well-known office furniture client using B2B Commerce on the
+								Salesforce platform
+							</p>
+							<p>
+								Participated in the full application life cycle from technical
 								design to development, testing, and deployment using
 								contemporary Cloud based development tools
 							</p>
 							<p>
-								Interact directly with customer, development team, and other
+								Interacted directly with customer, development team, and other
 								stakeholders to ensure customer success
 							</p>
 							<p>
-								Design, develop and integrate Salesforce applications using
-								Visualforce, APEX, Java, .NET, modern web technologies, and
-								native mobile platforms (iOS, Android)
+								Designed, developed and integrated Salesforce applications using
+								Visualforce, APEX, Javascript, and other technologies
 							</p>
 							<p>
-								Work with technical teams and senior architects to finalize
-								architecture specifications, and creates design as it relates to
+								Worked with technical teams and senior architects to finalize
+								architecture specifications, and created design as it relates to
 								the customization and/or integration of software solutions
 							</p>
 							<p>
-								Develop proofs of concept (POC) as needed, integrating new
+								Developed proofs of concept (POC) as needed, integrated new
 								components with back office systems during the design and
 								requirements phase to evaluate products and integration
 								strategies
 							</p>
 							<p>
-								Validate application code against unit tests, security tests,
+								Validated application code against unit tests, security tests,
 								and profiling tools
 							</p>
 							<p>
-								Assist in identifying, troubleshooting, and resolving defects
+								Assisted in identifying, troubleshooting, and resolving defects
 								encountered during various stages of project delivery, including
 								during the deployment and implementation of the solution in
 								production environments
 							</p>
 							<p>
-								Produce project documentation, including functional and
+								Produced project documentation, including functional and
 								technical designs, and end-user guides
 							</p>
 						</div>
@@ -155,14 +163,29 @@ export const Experience = () => {
 							<p className="small mb-1">The Goodyear Tire & Rubber Co.</p>
 							<p className="bold mb-1">Applications Developer Senior Analyst</p>
 							<p className="small">April 2022 - January 2023</p>
+							<p>Worked for NASCAR division</p>
 							<p>
-								Odio urna aliquet amet facilisis massa blandit ut ac iaculis.
-								Ornare in sit urna elementum orci fermentum vitae amet. Est
-								mauris ipsum non facilisis. Lacus elit nunc eget faucibus odio
-								dignissim cursus mi. Egestas mattis pharetra pretium diam eget
-								quis. Ante fames ornare aliquet varius turpis. Iaculis cursus
-								faucibus ullamcorper auctor gravida venenatis maecenas laoreet
-								sit.
+								Maintained an application used to keep track of tire inventory
+								in warehouse
+							</p>
+							<p>
+								Created dashboard web application for tire engineers to view
+								data from NASCAR races using a NextJS front-end, a .NET Web API
+								back-end, and a MySQL database
+							</p>
+							<p>
+								Wrote and tested software on schedule in support of company
+								objectives as defined by the software development manager
+							</p>
+							<p>
+								Communicated with other developers as well as supervisor
+								concerning software changes before, during, and upon their
+								completion
+							</p>
+							<p>Conformed software to established coding guidelines</p>
+							<p>
+								Created UI/UX mockups in Figma with help and guidance from UI/UX
+								Specialist
 							</p>
 						</div>
 					)}
