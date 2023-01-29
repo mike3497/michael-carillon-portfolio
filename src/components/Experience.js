@@ -228,9 +228,13 @@ export const Experience = () => {
 						</li>
 					</ul>
 					<div className="mt-2">
-						<Button>
-							<i className="fa-solid fa-download"></i> Resume
-						</Button>
+						<a
+							className="button"
+							href="/pdfs/Michael Carillon Resume 2023.pdf"
+							download="Michael Carillon Resume 2023"
+						>
+							<i className="fa-solid fa-download"></i> Resume PDF
+						</a>
 					</div>
 				</div>
 			</div>
