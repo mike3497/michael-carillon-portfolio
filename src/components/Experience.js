@@ -204,6 +204,12 @@ export const Experience = () => {
 						highly motivated to stay current with industry trends and
 						advancements in web development technology.
 					</p>
+					<p>
+						I am dedicated to providing high-quality work that meets your
+						expectations. I take pride in my attention to detail and am
+						constantly updating my knowledge and skills to stay ahead of
+						industry trends and to provide the best work possible.
+					</p>
 					<p>Some languages I speak are:</p>
 					<ul className="languages-list">
 						<li>
