@@ -20,7 +20,7 @@ export const Experience = () => {
 			</div>
 			<div className="row mb-2">
 				<div className="col-lg-4">
-					<ul className="experience-list mb-4">
+					<ul className="experience-list mb-2">
 						<li>
 							<button
 								data-index="0"
@@ -52,7 +52,7 @@ export const Experience = () => {
 				</div>
 				<div className="col-lg-8">
 					{selectedIndex === 0 && (
-						<div>
+						<div className="experience-tab">
 							<p className="small mb-1">Acme Fresh Market</p>
 							<p className="bold mb-1">
 								Digital Content Specialist / Data Analyst
@@ -108,7 +108,7 @@ export const Experience = () => {
 					)}
 
 					{selectedIndex === 1 && (
-						<div>
+						<div className="experience-tab">
 							<p className="small mb-1">Acumen Solutions / Salesforce</p>
 							<p className="bold mb-1">Associate Technical Consultant</p>
 							<p className="small">October 2020 - April 2022</p>
@@ -159,7 +159,7 @@ export const Experience = () => {
 					)}
 
 					{selectedIndex === 2 && (
-						<div>
+						<div className="experience-tab">
 							<p className="small mb-1">The Goodyear Tire & Rubber Co.</p>
 							<p className="bold mb-1">Applications Developer Senior Analyst</p>
 							<p className="small">April 2022 - January 2023</p>

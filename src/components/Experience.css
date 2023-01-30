@@ -23,6 +23,11 @@
     cursor: pointer;
 }
 
+.experience-tab {
+    background-color: var(--gray50);
+    padding: 8px;
+}
+
 .languages-list {
     display: inline-block;
     list-style-type: none;
