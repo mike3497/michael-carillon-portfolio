@@ -18,14 +18,20 @@ export const Footer = () => {
 							<ul>
 								<li>
 									<CircleIcon>
-										<a href="https://github.com/mike3497">
+										<a
+											href="https://github.com/mike3497"
+											aria-label="GitHub Link"
+										>
 											<i className="fa-brands fa-github"></i>
 										</a>
 									</CircleIcon>
 								</li>
 								<li>
 									<CircleIcon>
-										<a href="https://linkedin.com/in/michael-carillon">
+										<a
+											href="https://linkedin.com/in/michael-carillon"
+											aria-label="LinkedIn Link"
+										>
 											<i className="fa-brands fa-linkedin-in"></i>
 										</a>
 									</CircleIcon>
