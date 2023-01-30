@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: 'Menlo';
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 }
 
 *,
