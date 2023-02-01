@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Experience.css';
+import { AcmeFreshMarketExperience } from './work-experiences/AcmeFreshMarketExperience';
+import { GoodyearExperience } from './work-experiences/GoodyearExperience';
+import { SalesforceExperience } from './work-experiences/SalesforceExperience';
 import Button from './ui/Button';
 
 export const Experience = () => {
@@ -51,144 +54,11 @@ export const Experience = () => {
 					</ul>
 				</div>
 				<div className="col-lg-8">
-					{selectedIndex === 0 && (
-						<div className="experience-tab">
-							<p className="small mb-1">Acme Fresh Market</p>
-							<p className="bold mb-1">
-								Digital Content Specialist / Data Analyst
-							</p>
-							<p className="small">December 2017 - October 2020</p>
-							<p>
-								Created customer-facing recipe page on website and back-end way
-								to manage recipes
-							</p>
-							<p>
-								Maintained the digital shelf for all items on e-commerce
-								platform, including editing product and brand descriptions to
-								make them customer-facing and adding product images for items
-								that do not have images using a custom content management system
-							</p>
-							<p>
-								Merchandised products within the e-commerce platform to drive
-								traffic, conversion, and average order value by representing the
-								weekly ad online and simplifying customers’ online experience
-							</p>
-							<p>
-								Analyzed Google Analytics Data and applied knowledge to drive
-								conversion and basket size growth, and suggested ways to
-								simplify customers’ online experience
-							</p>
-							<p>
-								Implemented and created effective and innovative online
-								merchandising strategies to drive total online sales and
-								profitability
-							</p>
-							<p>
-								Managed the placement of products that are displayed digitally
-								across acmestores.com
-							</p>
-							<p>
-								Executed email campaigns to specific lists using Mailchimp, and
-								analyzed performance of campaigns
-							</p>
-							<p>
-								Posted social media content using Later / Hootsuite and similar
-								social media management tool
-							</p>
-							<p>
-								Used Customer Relationship Management software and customer
-								database to manage promotions and created targeted groups, and
-								provided analysis of the performance of promotions
-							</p>
-							<p>
-								Created weekly store signage package using custom web-based
-								platform
-							</p>
-						</div>
-					)}
+					{selectedIndex === 0 && <AcmeFreshMarketExperience />}
 
-					{selectedIndex === 1 && (
-						<div className="experience-tab">
-							<p className="small mb-1">Acumen Solutions / Salesforce</p>
-							<p className="bold mb-1">Associate Technical Consultant</p>
-							<p className="small">October 2020 - April 2022</p>
-							<p>
-								Worked on implementing new user stories and fixing bugs for a
-								well-known office furniture client using B2B Commerce on the
-								Salesforce platform
-							</p>
-							<p>
-								Participated in the full application life cycle from technical
-								design to development, testing, and deployment using
-								contemporary Cloud based development tools
-							</p>
-							<p>
-								Interacted directly with customer, development team, and other
-								stakeholders to ensure customer success
-							</p>
-							<p>
-								Designed, developed and integrated Salesforce applications using
-								Visualforce, APEX, Javascript, and other technologies
-							</p>
-							<p>
-								Worked with technical teams and senior architects to finalize
-								architecture specifications, and created design as it relates to
-								the customization and/or integration of software solutions
-							</p>
-							<p>
-								Developed proofs of concept (POC) as needed, integrated new
-								components with back office systems during the design and
-								requirements phase to evaluate products and integration
-								strategies
-							</p>
-							<p>
-								Validated application code against unit tests, security tests,
-								and profiling tools
-							</p>
-							<p>
-								Assisted in identifying, troubleshooting, and resolving defects
-								encountered during various stages of project delivery, including
-								during the deployment and implementation of the solution in
-								production environments
-							</p>
-							<p>
-								Produced project documentation, including functional and
-								technical designs, and end-user guides
-							</p>
-						</div>
-					)}
+					{selectedIndex === 1 && <SalesforceExperience />}
 
-					{selectedIndex === 2 && (
-						<div className="experience-tab">
-							<p className="small mb-1">The Goodyear Tire & Rubber Co.</p>
-							<p className="bold mb-1">Applications Developer Senior Analyst</p>
-							<p className="small">April 2022 - January 2023</p>
-							<p>Worked for NASCAR division</p>
-							<p>
-								Maintained an application used to keep track of tire inventory
-								in warehouse
-							</p>
-							<p>
-								Created dashboard web application for tire engineers to view
-								data from NASCAR races using a NextJS front-end, a .NET Web API
-								back-end, and a MySQL database
-							</p>
-							<p>
-								Wrote and tested software on schedule in support of company
-								objectives as defined by the software development manager
-							</p>
-							<p>
-								Communicated with other developers as well as supervisor
-								concerning software changes before, during, and upon their
-								completion
-							</p>
-							<p>Conformed software to established coding guidelines</p>
-							<p>
-								Created UI/UX mockups in Figma with help and guidance from UI/UX
-								Specialist
-							</p>
-						</div>
-					)}
+					{selectedIndex === 2 && <GoodyearExperience />}
 				</div>
 			</div>
 			<div className="row">
