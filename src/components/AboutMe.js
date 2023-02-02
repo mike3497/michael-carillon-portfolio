@@ -31,7 +31,7 @@ export const AboutMe = () => {
 			<div className="row">
 				<div className="col-sm-4">
 					<img
-						src="/imgs/headshot.jpeg"
+						src="/imgs/RDPMC_7864.jpeg"
 						className="img-fluid mb-1"
 						alt="Michael Carillon Headshot"
 					/>
@@ -45,7 +45,7 @@ export const AboutMe = () => {
 				</div>
 				<div className="col-sm-4">
 					<img
-						src="/imgs/brutus.jpeg"
+						src="/imgs/IMG_0978.jpeg"
 						className="img-fluid"
 						alt="Brutus the Coonhound"
 					/>
