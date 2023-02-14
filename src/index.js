@@ -6,6 +6,10 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import './index.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = 'UA-257248068-1';
+ReactGA.initialize(TRACKING_ID);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
