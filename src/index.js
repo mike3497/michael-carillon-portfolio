@@ -6,9 +6,6 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import './index.css';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import ReactGA from 'react-ga4';
-
-ReactGA.initialize('G-19M24G23XS');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
