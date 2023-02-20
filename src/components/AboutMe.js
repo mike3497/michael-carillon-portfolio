@@ -32,21 +32,21 @@ export const AboutMe = () => {
 				<div className="col-sm-4">
 					<img
 						src="/imgs/RDPMC_7864.jpeg"
-						className="img-fluid mb-1"
+						className="img-fluid square-image mb-1"
 						alt="Michael Carillon Headshot"
 					/>
 				</div>
 				<div className="col-sm-4">
 					<img
-						src="/imgs/michael-and-katherine.jpeg"
-						className="img-fluid mb-1"
+						src="/imgs/Engagement-27.jpg"
+						className="img-fluid square-image mb-1"
 						alt="Michael & Katherine"
 					/>
 				</div>
 				<div className="col-sm-4">
 					<img
-						src="/imgs/IMG_0978.jpeg"
-						className="img-fluid"
+						src="/imgs/Engagement-111.jpg"
+						className="img-fluid square-image"
 						alt="Brutus the Coonhound"
 					/>
 				</div>
