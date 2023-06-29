@@ -12,10 +12,10 @@
     </div>
     <div class="flex flex-row gap-4 justify-center mb-4">
       <CircleIconLink to="#">
-        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-github"></i>
       </CircleIconLink>
       <CircleIconLink to="#">
-        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
       </CircleIconLink>
     </div>
     <p class="text-center text-xs">© Copyright 2023 Michael Carillon</p>
