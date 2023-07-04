@@ -12,4 +12,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  app: {
+    head: {
+      title: 'Michael Carillon',
+    },
+  },
 });
