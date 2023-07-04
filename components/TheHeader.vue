@@ -11,8 +11,8 @@
           ></a>
         </div>
         <div class="flex flex-row gap-4">
-          <a href="#">About</a>
-          <a href="#">Experience</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
         </div>
       </nav>
       <div class="flex flex-col justify-center gap-2 h-[512px]">

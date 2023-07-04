@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto my-4">
+  <div id="about-me" class="container mx-auto my-4">
     <div class="max-w-xl mb-4">
-      <h1 class="font-bold text-4xl">//ABOUT ME</h1>
+      <SectionHeading>//About Me</SectionHeading>
       <p class="mb-2">Hey, I am Michael Carillon.</p>
       <p class="mb-2">
         I am a passionate full-stack web developer based in Cleveland, OH.
@@ -38,3 +38,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import SectionHeading from '~/components/shared/SectionHeading.vue';
+</script>
