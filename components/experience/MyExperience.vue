@@ -1,8 +1,8 @@
 <template>
-  <div id="experience" class="container mx-auto">
+  <div id="experience" class="container mx-auto px-4">
     <SectionHeading>//Experience</SectionHeading>
-    <div class="grid grid-cols-5">
-      <div class="col-span-2">
+    <div class="grid grid-cols-1 md:grid-cols-5">
+      <div class="col-span-2 mb-4">
         <ul>
           <li v-for="(experience, index) in experiences" :key="index">
             <button

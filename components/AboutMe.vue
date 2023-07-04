@@ -1,5 +1,5 @@
 <template>
-  <div id="about-me" class="container mx-auto my-4">
+  <div id="about-me" class="container mx-auto my-4 px-4">
     <div class="max-w-xl mb-4">
       <SectionHeading>//About Me</SectionHeading>
       <p class="mb-2">Hey, I am Michael Carillon.</p>
