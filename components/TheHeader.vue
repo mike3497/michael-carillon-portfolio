@@ -11,7 +11,7 @@
           ></a>
         </div>
         <div class="flex flex-row gap-4">
-          <a href="#about">About</a>
+          <a href="#about-me">About</a>
           <a href="#experience">Experience</a>
         </div>
       </nav>
