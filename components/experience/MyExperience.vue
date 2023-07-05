@@ -25,15 +25,15 @@
 
     <div class="max-w-xl">
       <p class="mb-2">
-        I am a web developer with 2 years of experience in designing and
+        I am a web developer with over 2 years of experience in designing and
         developing responsive websites and web applications. I am proficient in
         HTML, CSS, JavaScript. I have a strong understanding of front-end
-        development and web design principles. I am experienced in using React,
-        NextJS, and Node.Js. I am familiar with Agile development methodologies
-        and version control systems such as Git. I am a team player with
-        excellent communication and problem-solving skills. I am highly
-        motivated to stay current with industry trends and advancements in web
-        development technology.
+        development and web design principles. I am experienced in using popular
+        front end frameworks such as React and Vue. I am familiar with Agile
+        development methodologies and version control systems such as Git. I am
+        a team player with excellent communication and problem-solving skills. I
+        am highly motivated to stay current with industry trends and
+        advancements in web development technology.
       </p>
       <p class="mb-2">
         I am dedicated to providing high-quality work that meets your
@@ -42,7 +42,7 @@
         provide the best work possible.
       </p>
       <a
-        class="inline-block bg-blue-500 text-white hover:bg-blue-800 px-4 py-2 mb-2"
+        class="inline-block bg-blue-500 text-white hover:bg-blue-800 px-4 py-2 mb-6"
         href="/assets/Michael Carillon Resume 2023.pdf"
         download="Michael Carillon Resume 2023"
       >
