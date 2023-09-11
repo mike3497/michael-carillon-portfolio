@@ -14,6 +14,16 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Michael Carillon is a full-stack web developer based in Cleveland, OH. He loves all things web development.',
+        },
+      ],
       title: 'Michael Carillon',
     },
   },

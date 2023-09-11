@@ -35,6 +35,7 @@
       <img
         class="object-cover aspect-square"
         src="/assets/images/RDPMC_7864.jpg"
+        alt="Michael Carillon Headshot"
       />
     </div>
     <!-- <div class="max-w-xl mb-4">

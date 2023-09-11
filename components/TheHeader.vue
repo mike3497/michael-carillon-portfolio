@@ -3,10 +3,14 @@
     <div class="container mx-auto">
       <nav class="flex flex-row justify-between py-4">
         <div class="flex flex-row gap-4">
-          <a href="https://github.com/mike3497"
+          <a
+            href="https://github.com/mike3497"
+            aria-label="Michael Carillon Github"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="https://linkedin.com/in/michael-carillon"
+          <a
+            href="https://linkedin.com/in/michael-carillon"
+            aria-label="Michael Carillon LinkedIn"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
         </div>
