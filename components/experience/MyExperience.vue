@@ -23,37 +23,43 @@
       </div>
     </div>
 
-    <div class="max-w-xl">
-      <p class="mb-2">
-        I am a web developer with over 2 years of experience in designing and
-        developing responsive websites and web applications. I am proficient in
-        HTML, CSS, JavaScript. I have a strong understanding of front-end
-        development and web design principles. I am experienced in using popular
-        front end frameworks such as React and Vue. I am familiar with Agile
-        development methodologies and version control systems such as Git. I am
-        a team player with excellent communication and problem-solving skills. I
-        am highly motivated to stay current with industry trends and
-        advancements in web development technology.
+    <div class="prose mb-2">
+      <p>
+        I'm a web developer with over 2 years of experience, specializing in
+        crafting responsive websites and web applications. My skill set includes
+        proficiency in HTML, CSS, and JavaScript, with a solid grasp of
+        front-end development and web design principles. I'm well-versed in
+        popular front-end frameworks like React and Vue, and I'm no stranger to
+        Agile development methods and version control systems like Git.
       </p>
-      <p class="mb-2">
-        I am dedicated to providing high-quality work that meets your
-        expectations. I take pride in my attention to detail and am constantly
-        updating my knowledge and skills to stay ahead of industry trends and to
-        provide the best work possible.
+      <p>
+        Collaboration is my strong suit, thanks to excellent communication and
+        problem-solving abilities. I'm highly motivated to stay on top of
+        industry trends and the latest advancements in web development
+        technology.
       </p>
-      <a
-        class="inline-block bg-blue-500 text-white hover:bg-blue-800 px-4 py-2 mb-6"
-        href="/assets/Michael Carillon Resume 2023.pdf"
-        download="Michael Carillon Resume 2023"
-      >
-        <i class="fa-solid fa-download mr-2"></i>Resume PDF
-      </a>
+      <p>
+        My commitment revolves around delivering top-notch work that aligns with
+        your expectations. I take great pride in my keen attention to detail and
+        continually invest in updating my knowledge and skills, ensuring I stay
+        ahead of industry trends to provide you with the best possible work.
+      </p>
     </div>
+    <a
+      class="inline-block bg-blue-500 text-white hover:bg-blue-600 active:scale-105 transition-all px-4 py-2 mb-6"
+      href="/assets/Michael Carillon Resume 2023.pdf"
+      download="Michael Carillon Resume 2023"
+    >
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined"> download </span>
+        <span>Resume PDF</span>
+      </div>
+    </a>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Experience } from 'models/experience';
+import { Experience } from '@/models/experience';
 import SectionHeading from '~/components/shared/SectionHeading.vue';
 import ExperienceCard from '~/components/experience/ExperienceCard.vue';
 import experiencesData from '~/assets/data/experiences.json';

@@ -1,16 +1,14 @@
 <template>
   <footer class="bg-zinc-900 text-white py-4">
-    <div class="mb-4">
-      <p class="text-center mb-2">
-        <a href="mailto:mcarillon97@gmail.com"
-          ><i class="fa-solid fa-envelope mr-2"></i>mcarillon97@gmail.com</a
-        >
-      </p>
-      <p class="text-center">
-        <a href="tel:3307037919"
-          ><i class="fa-solid fa-phone mr-2"></i>(330) 703-7919</a
-        >
-      </p>
+    <div class="flex flex-col items-center gap-2 mb-4">
+      <a class="flex items-center gap-2" href="mailto:mcarillon97@gmail.com">
+        <span class="material-symbols-outlined"> mail </span>
+        <span> mcarillon97@gmail.com</span>
+      </a>
+      <a class="flex items-center gap-2" href="tel:3307037919">
+        <span class="material-symbols-outlined"> call </span>
+        <span>(330) 703-7919</span>
+      </a>
     </div>
     <div class="flex flex-row gap-4 justify-center mb-4">
       <CircleIconLink to="https://github.com/mike3497">
