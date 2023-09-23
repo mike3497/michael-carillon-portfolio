@@ -34,7 +34,7 @@
     <div>
       <img
         class="object-cover aspect-square"
-        src="/assets/images/RDPMC_7864.jpg"
+        src="/images/RDPMC_7864.jpg"
         alt="Michael Carillon Headshot"
       />
     </div>
