@@ -1,7 +1,7 @@
 <template>
   <a
     :href="to"
-    class="flex items-center justify-center w-8 h-8 text-white border border-white hover:text-zinc-900 hover:bg-white rounded-full"
+    class="flex items-center justify-center w-8 h-8 text-white border-2 border-white hover:text-zinc-900 hover:bg-white rounded-full transition-all"
   >
     <slot></slot>
   </a>

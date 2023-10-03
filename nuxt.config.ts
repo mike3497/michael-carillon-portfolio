@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/main.css',
     '@fortawesome/fontawesome-free/css/fontawesome.min.css',
-    '@fortawesome/fontawesome-free/css/brands.min.css',
+    '@fortawesome/fontawesome-free/css/all.min.css',
   ],
   postcss: {
     plugins: {
