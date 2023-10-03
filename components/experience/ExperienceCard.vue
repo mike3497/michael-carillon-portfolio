@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { Experience } from '~/models/experience';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 const props = defineProps({
   experience: {
@@ -21,7 +21,7 @@ const props = defineProps({
 });
 
 const startDate = computed<string>(() => {
-  return moment(props.experience.startDate).format('MMMM YYYY');
+  return dayjs(props.experience.startDate).format('MMMM YYYY');
 });
 
 const endDate = computed<string>(() => {
@@ -29,6 +29,6 @@ const endDate = computed<string>(() => {
     return 'Present';
   }
 
-  return moment(props.experience.endDate).format('MMMM YYYY');
+  return dayjs(props.experience.endDate).format('MMMM YYYY');
 });
 </script>
