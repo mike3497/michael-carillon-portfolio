@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { Experience } from '~/models/experience';
+import { Experience } from '@/models/experience';
 import dayjs from 'dayjs';
 
 const props = defineProps({

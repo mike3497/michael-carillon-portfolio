@@ -37,9 +37,9 @@
 
 <script setup lang="ts">
 import { Experience } from '@/models/experience';
-import SectionHeading from '~/components/shared/SectionHeading.vue';
-import ExperienceCard from '~/components/experience/ExperienceCard.vue';
-import experiencesData from '~/assets/data/experiences.json';
+import SectionHeading from '@/components/shared/SectionHeading.vue';
+import ExperienceCard from '@/components/experience/ExperienceCard.vue';
+import experiencesData from '@/assets/data/experiences.json';
 
 const experiences = ref<Experience[]>(experiencesData);
 const selectedIndex = ref<number>(experiences.value.length - 1);

@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import CircleIconLink from '~/components/shared/CircleIconLink.vue';
+import CircleIconLink from '@/components/shared/CircleIconLink.vue';
 
 const year = computed<number>(() => new Date().getFullYear());
 </script>

@@ -59,5 +59,5 @@
 </template>
 
 <script setup lang="ts">
-import SectionHeading from '~/components/shared/SectionHeading.vue';
+import SectionHeading from '@/components/shared/SectionHeading.vue';
 </script>
