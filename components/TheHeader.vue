@@ -20,7 +20,10 @@
           <a href="#my-projects">Projects</a>
         </div>
       </nav>
-      <div class="flex flex-col justify-center gap-2 h-[512px]">
+      <div
+        class="flex flex-col justify-center gap-2 h-[512px]"
+        v-motion-slide-left
+      >
         <h3>Hi, I am</h3>
         <h1 class="font-bold uppercase text-4xl">Michael Carillon</h1>
         <h2>Full-stack Web Developer</h2>
