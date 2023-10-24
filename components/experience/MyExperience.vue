@@ -22,8 +22,8 @@
         <ExperienceCard :experience="selectedExperience" />
       </div>
     </div>
-    <a
-      class="inline-block bg-blue-500 text-white hover:bg-blue-600 active:scale-105 transition-all px-4 py-2 mb-6"
+    <LinkButton
+      class="mb-6"
       href="/assets/Michael Carillon Resume 2023.pdf"
       download="Michael Carillon Resume 2023"
     >
@@ -31,13 +31,14 @@
         <span class="material-symbols-outlined"> download </span>
         <span>Resume PDF</span>
       </div>
-    </a>
+    </LinkButton>
   </div>
 </template>
 
 <script setup lang="ts">
 import experiencesData from '@/assets/data/experiences.json';
 import ExperienceCard from '@/components/experience/ExperienceCard.vue';
+import LinkButton from '@/components/shared/LinkButton.vue';
 import SectionHeading from '@/components/shared/SectionHeading.vue';
 import { Experience } from '@/models/experience';
 
