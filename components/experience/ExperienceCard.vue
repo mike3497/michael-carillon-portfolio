@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-100 p-4">
+  <div class="bg-zinc-100 p-4 border-2 border-black">
     <div class="mb-4">
       <p>{{ experience.employer }}</p>
       <h1 class="font-bold text-lg">{{ experience.jobTitle }}</h1>

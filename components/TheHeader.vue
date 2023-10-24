@@ -1,25 +1,31 @@
 <template>
-  <header class="bg-blue-500 text-white px-4">
+  <header class="bg-white text-black border-b-4 border-black sticky top-0 z-50">
+    <nav
+      class="container mx-auto flex flex-row justify-center sm:justify-between py-4"
+    >
+      <div class="hidden sm:flex flex-row gap-4">
+        <a
+          href="https://github.com/mike3497"
+          aria-label="Michael Carillon Github"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/michael-carillon"
+          aria-label="Michael Carillon LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in"> </i
+        ></a>
+      </div>
+      <div class="flex flex-row gap-4">
+        <a href="#about-me">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#my-projects">Projects</a>
+      </div>
+    </nav>
+  </header>
+  <div class="bg-blue-500 text-white border-b-2 border-black">
     <div class="container mx-auto">
-      <nav class="flex flex-row justify-between py-4">
-        <div class="flex flex-row gap-4">
-          <a
-            href="https://github.com/mike3497"
-            aria-label="Michael Carillon Github"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://linkedin.com/in/michael-carillon"
-            aria-label="Michael Carillon LinkedIn"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-        </div>
-        <div class="flex flex-row gap-4">
-          <a href="#about-me">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#my-projects">Projects</a>
-        </div>
-      </nav>
       <div
         class="flex flex-col justify-center gap-2 h-[512px]"
         v-motion-slide-left
@@ -35,5 +41,5 @@
         </div>
       </div>
     </div>
-  </header>
+  </div>
 </template>

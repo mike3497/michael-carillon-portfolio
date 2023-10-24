@@ -33,7 +33,7 @@
     </div>
     <div>
       <img
-        class="object-cover aspect-square"
+        class="object-cover aspect-square border-2 border-black"
         src="/images/RDPMC_7864.jpg"
         alt="Michael Carillon Headshot"
       />
