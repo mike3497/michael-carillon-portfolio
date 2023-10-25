@@ -1,21 +1,23 @@
 <template>
   <header class="bg-white text-black border-b-4 border-black sticky top-0 z-50">
     <nav
-      class="container mx-auto flex flex-row justify-center sm:justify-between py-4"
+      class="container mx-auto flex flex-row justify-center items-center sm:justify-between h-16"
     >
       <div class="hidden sm:flex flex-row gap-4">
-        <a
+        <CircleIconLink
           href="https://github.com/mike3497"
           aria-label="Michael Carillon Github"
+          :variant="CircleIconLinkVariant.BLACK"
         >
           <i class="fa-brands fa-github"></i>
-        </a>
-        <a
+        </CircleIconLink>
+        <CircleIconLink
           href="https://linkedin.com/in/michael-carillon"
           aria-label="Michael Carillon LinkedIn"
+          :variant="CircleIconLinkVariant.BLACK"
         >
-          <i class="fa-brands fa-linkedin-in"> </i
-        ></a>
+          <i class="fa-brands fa-linkedin-in"> </i>
+        </CircleIconLink>
       </div>
       <div class="flex flex-row gap-4">
         <a href="#about-me">About</a>
@@ -43,3 +45,8 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import CircleIconLink from '@/components/shared/CircleIconLink.vue';
+import { CircleIconLinkVariant } from '@/types/circleIconLinkVariant';
+</script>

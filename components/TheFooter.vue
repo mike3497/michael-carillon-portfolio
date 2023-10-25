@@ -12,14 +12,16 @@
     </div>
     <div class="flex flex-row gap-4 justify-center mb-4">
       <CircleIconLink
-        to="https://github.com/mike3497"
+        href="https://github.com/mike3497"
         aria-label="Michael Carillon Github"
+        :variant="CircleIconLinkVariant.WHITE"
       >
         <i class="fa-brands fa-github"></i>
       </CircleIconLink>
       <CircleIconLink
-        to="https://linkedin.com/in/michael-carillon"
+        href="https://linkedin.com/in/michael-carillon"
         aria-label="Michael Carillon LinkedIn"
+        :variant="CircleIconLinkVariant.WHITE"
       >
         <i class="fa-brands fa-linkedin-in"></i>
       </CircleIconLink>
@@ -30,6 +32,7 @@
 
 <script setup lang="ts">
 import CircleIconLink from '@/components/shared/CircleIconLink.vue';
+import { CircleIconLinkVariant } from '~/types/circleIconLinkVariant';
 
 const year = computed<number>(() => new Date().getFullYear());
 </script>
