@@ -20,9 +20,21 @@
         </CircleIconLink>
       </div>
       <div class="flex flex-row gap-4">
-        <a href="#about-me">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#my-projects">Projects</a>
+        <a
+          class="border-b-2 border-transparent hover:border-black"
+          href="#about-me"
+          >About</a
+        >
+        <a
+          class="border-b-2 border-transparent hover:border-black"
+          href="#experience"
+          >Experience</a
+        >
+        <a
+          class="border-b-2 border-transparent hover:border-black"
+          href="#my-projects"
+          >Projects</a
+        >
       </div>
     </nav>
   </header>
