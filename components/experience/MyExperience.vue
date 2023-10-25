@@ -8,7 +8,7 @@
             <button
               class="my-1"
               :class="{
-                'font-bold border-l-green-500 border-l-2 pl-2':
+                'font-bold border-l-green-500 border-l-4 pl-2':
                   selectedIndex === index,
               }"
               @click="() => (selectedIndex = index)"
