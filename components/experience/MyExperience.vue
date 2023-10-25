@@ -1,5 +1,5 @@
 <template>
-  <div id="experience" class="container mx-auto px-4">
+  <div id="experience" class="container">
     <SectionHeading>//Experience</SectionHeading>
     <div class="grid grid-cols-1 md:grid-cols-5">
       <div class="col-span-2 mb-4">

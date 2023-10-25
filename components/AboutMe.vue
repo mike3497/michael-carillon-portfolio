@@ -1,7 +1,7 @@
 <template>
   <div
     id="about-me"
-    class="container mx-auto px-4 my-4 grid grid-cols-1 md:grid-cols-2 gap-4"
+    class="container my-4 grid grid-cols-1 md:grid-cols-2 gap-4"
   >
     <div>
       <SectionHeading>//About Me</SectionHeading>

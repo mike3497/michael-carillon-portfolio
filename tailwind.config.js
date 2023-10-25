@@ -9,6 +9,10 @@ module.exports = {
     './app.vue',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+    },
     extend: {
       fontFamily: {
         sans: ['Roboto Mono'],

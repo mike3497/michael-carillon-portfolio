@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white text-black border-b-4 border-black sticky top-0 z-50">
     <nav
-      class="container mx-auto flex flex-row justify-center items-center sm:justify-between h-16"
+      class="container flex flex-row justify-center items-center sm:justify-between h-16"
     >
       <div class="hidden sm:flex flex-row gap-4">
         <CircleIconLink
@@ -39,7 +39,7 @@
     </nav>
   </header>
   <div class="bg-blue-500 text-white border-b-2 border-black">
-    <div class="container mx-auto">
+    <div class="container">
       <div
         class="flex flex-col justify-center gap-2 h-[512px]"
         v-motion-slide-left
