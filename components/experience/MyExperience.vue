@@ -4,9 +4,12 @@
     <div class="grid grid-cols-1 md:grid-cols-5">
       <div class="col-span-2 mb-4">
         <ul>
-          <li v-for="(experience, index) in experiences" :key="index">
+          <li
+            v-for="(experience, index) in experiences"
+            :key="experience.employer"
+          >
             <button
-              class="my-1"
+              class="hover:border-l-green-500 hover:border-l-2 hover:pl-2 my-1"
               :class="{
                 'font-bold border-l-green-500 border-l-4 pl-2':
                   selectedIndex === index,
