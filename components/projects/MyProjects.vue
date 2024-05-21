@@ -22,7 +22,7 @@ const projects: Project[] = [
       'A site for my wedding to help share useful information with my guests.',
     github: 'https://github.com/mike3497/carillon-wedding',
     image: '/images/projects/carillon_wedding.png',
-    link: 'https://www.carillonwedding.com/',
+    link: 'https://carillonwedding.netlify.app/',
     title: 'Carillon Wedding',
   },
   {
