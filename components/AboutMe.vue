@@ -25,9 +25,9 @@
           different breweries.
         </p>
         <p>
-          Oh, and I can't forget my buddy Brutus, a 3-year-old Bluetick
-          Coonhound mix. We go on hikes and strolls together, and he's basically
-          my sidekick for all things outdoorsy.
+          Oh, and I can't forget my buddy Brutus, a {{ brutusAge }}-year-old
+          Bluetick Coonhound mix. We go on hikes and strolls together, and he's
+          basically my sidekick for all things outdoorsy.
         </p>
       </div>
     </div>
@@ -60,4 +60,21 @@
 
 <script setup lang="ts">
 import SectionHeading from '@/components/shared/SectionHeading.vue';
+
+const brutusAge = computed<number>(() => {
+  const birthDate: Date = new Date('08/14/2019');
+  const currentDate: Date = new Date();
+
+  let age: number = currentDate.getFullYear() - birthDate.getFullYear();
+
+  if (
+    currentDate.getMonth() < birthDate.getMonth() ||
+    (currentDate.getMonth() === birthDate.getMonth() &&
+      currentDate.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  return age;
+});
 </script>
