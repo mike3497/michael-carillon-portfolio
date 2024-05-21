@@ -8,7 +8,8 @@
       <div class="prose">
         <p>Hey, I am Michael Carillon.</p>
         <p>
-          I'm just a web developer who's all about coding and living in
+          I'm just a web developer with over {{ yearsOfExperience }} years of
+          professional experience who's all about coding and living in
           Cleveland, OH.
         </p>
         <p>
@@ -60,6 +61,7 @@
 
 <script setup lang="ts">
 import SectionHeading from '@/components/shared/SectionHeading.vue';
+import dayjs from 'dayjs';
 
 const brutusAge = computed<number>(() => {
   const birthDate: Date = new Date('08/14/2019');
@@ -76,5 +78,12 @@ const brutusAge = computed<number>(() => {
   }
 
   return age;
+});
+
+const yearsOfExperience = computed<number>(() => {
+  const startDate = dayjs('10/01/2020');
+  const currentDate = dayjs();
+
+  return currentDate.diff(startDate, 'year');
 });
 </script>
