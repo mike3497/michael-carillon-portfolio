@@ -3,7 +3,7 @@
     <div class="mb-4">
       <p>{{ experience.employer }}</p>
       <h1 class="font-bold text-lg">{{ experience.jobTitle }}</h1>
-      <p>{{ startDate }} - {{ endDate }}</p>
+      <p>{{ startDate }} - {{ endDate }} ({{ timeElapsed }})</p>
     </div>
     <div v-html="experience.content"></div>
   </div>
@@ -30,5 +30,25 @@ const endDate = computed<string>(() => {
   }
 
   return dayjs(props.experience.endDate).format('MMMM YYYY');
+});
+
+const timeElapsed = computed<string>(() => {
+  const startDate = dayjs(props.experience.startDate);
+  const endDate = dayjs(props.experience.endDate);
+
+  const years = endDate.diff(startDate, 'year');
+  const months = endDate.diff(startDate, 'month') % 12;
+
+  const result = [];
+
+  if (years > 0) {
+    result.push(`${years} year${years > 1 ? 's' : ''}`);
+  }
+
+  if (months > 0) {
+    result.push(`${months} month${months > 1 ? 's' : ''}`);
+  }
+
+  return result.join(', ');
 });
 </script>
