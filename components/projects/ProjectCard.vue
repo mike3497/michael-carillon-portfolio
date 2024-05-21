@@ -10,7 +10,9 @@
     <section class="flex flex-col flex-1 justify-between p-4">
       <header>
         <h2 class="font-bold text-lg">
-          <a :href="project.link">{{ project.title }}</a>
+          <a class="hover:underline" :href="project.link">
+            {{ project.title }}
+          </a>
         </h2>
         <p class="mb-4">{{ project.description }}</p>
       </header>
