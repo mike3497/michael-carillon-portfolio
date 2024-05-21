@@ -64,16 +64,12 @@ import SectionHeading from '@/components/shared/SectionHeading.vue';
 import dayjs from 'dayjs';
 
 const brutusAge = computed<number>(() => {
-  const birthDate: Date = new Date('08/14/2019');
-  const currentDate: Date = new Date();
+  const birthDate = dayjs('2019-08-14');
+  const currentDate = dayjs();
 
-  let age: number = currentDate.getFullYear() - birthDate.getFullYear();
+  let age = currentDate.diff(birthDate, 'year');
 
-  if (
-    currentDate.getMonth() < birthDate.getMonth() ||
-    (currentDate.getMonth() === birthDate.getMonth() &&
-      currentDate.getDate() < birthDate.getDate())
-  ) {
+  if (currentDate.isBefore(birthDate.add(age, 'year'), 'day')) {
     age--;
   }
 
