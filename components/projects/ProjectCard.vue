@@ -1,5 +1,5 @@
 <template>
-  <div class="border-2 border-black">
+  <article class="flex flex-col flex-1 bg-zinc-100 border-2 border-black">
     <a :href="project.link">
       <img
         :src="project.image"
@@ -7,22 +7,24 @@
         class="w-full border-b-2 border-black"
       />
     </a>
-    <div class="bg-zinc-100 p-4">
-      <a class="font-bold text-lg" :href="project.link">
-        {{ project.title }}
-      </a>
-      <p class="mb-4">
-        {{ project.description }}
-      </p>
-      <LinkButton
-        class="inline-block bg-blue-500 text-white border-2 border-black hover:bg-black active:scale-105 transition-all px-4 py-2"
-        :href="project.github"
-      >
-        <i class="fa-brands fa-github mr-2"></i>
-        <span>Github</span>
-      </LinkButton>
-    </div>
-  </div>
+    <section class="flex flex-col flex-1 justify-between p-4">
+      <header>
+        <h2 class="font-bold text-lg">
+          <a :href="project.link">{{ project.title }}</a>
+        </h2>
+        <p class="mb-4">{{ project.description }}</p>
+      </header>
+      <footer>
+        <LinkButton
+          class="bg-blue-500 text-white border-2 border-black hover:bg-black active:scale-105 transition-all px-4 py-2"
+          :href="project.github"
+        >
+          <i class="fa-brands fa-github mr-2"></i>
+          <span>Github</span>
+        </LinkButton>
+      </footer>
+    </section>
+  </article>
 </template>
 
 <script setup lang="ts">
