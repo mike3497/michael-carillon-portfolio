@@ -38,7 +38,7 @@
       </div>
     </nav>
   </header>
-  <div class="bg-blue-500 text-white border-b-2 border-black">
+  <div class="bg-blue-600 text-white border-b-2 border-black">
     <div class="container">
       <div
         class="flex flex-col justify-center gap-2 h-[512px]"
