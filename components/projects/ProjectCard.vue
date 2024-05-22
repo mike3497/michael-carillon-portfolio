@@ -31,7 +31,7 @@
 
 <script setup lang="ts">
 import LinkButton from '@/components/shared/LinkButton.vue';
-import { Project } from '@/models/project';
+import type { Project } from '@/models/project';
 
 defineProps({
   project: {

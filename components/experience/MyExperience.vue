@@ -42,7 +42,7 @@ import experiencesData from '@/assets/data/experiences.json';
 import ExperienceCard from '@/components/experience/ExperienceCard.vue';
 import LinkButton from '@/components/shared/LinkButton.vue';
 import SectionHeading from '@/components/shared/SectionHeading.vue';
-import { Experience } from '@/models/experience';
+import type { Experience } from '@/models/experience';
 
 const experiences = ref<Experience[]>(experiencesData);
 const selectedIndex = ref<number>(experiences.value.length - 1);

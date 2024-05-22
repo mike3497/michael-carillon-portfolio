@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import ProjectCard from '@/components/projects/ProjectCard.vue';
 import SectionHeading from '@/components/shared/SectionHeading.vue';
-import { Project } from '@/models/project';
+import type { Project } from '@/models/project';
 
 const projects: Project[] = [
   {
