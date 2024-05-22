@@ -18,7 +18,7 @@
       </header>
       <footer>
         <LinkButton
-          class="bg-blue-500 text-white border-2 border-black hover:bg-black active:scale-105 transition-all px-4 py-2"
+          class="bg-blue-600 text-white border-2 border-black hover:bg-black active:scale-105 transition-all px-4 py-2"
           :href="project.github"
         >
           <i class="fa-brands fa-github mr-2"></i>
