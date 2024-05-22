@@ -1,9 +1,9 @@
 <template>
-  <div id="experience" class="container">
+  <div id="experience" class="container my-4">
     <SectionHeading>//Experience</SectionHeading>
     <div class="grid grid-cols-1 md:grid-cols-5">
-      <div class="col-span-2 mb-4">
-        <ul>
+      <div class="col-span-2">
+        <ul class="mb-4">
           <li
             v-for="(experience, index) in experiences"
             :key="experience.employer"
@@ -14,27 +14,26 @@
                 'font-bold border-l-green-500 border-l-4 pl-2':
                   selectedIndex === index,
               }"
-              @click="() => (selectedIndex = index)"
+              @click="selectedIndex = index"
             >
               {{ experience.employer }}
             </button>
           </li>
         </ul>
+        <LinkButton
+          href="/assets/Michael Carillon Resume 2023.pdf"
+          download="Michael Carillon Resume 2023"
+        >
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined"> download </span>
+            <span>Resume PDF</span>
+          </div>
+        </LinkButton>
       </div>
       <div class="col-span-3">
         <ExperienceCard :experience="selectedExperience" />
       </div>
     </div>
-    <LinkButton
-      class="mb-6"
-      href="/assets/Michael Carillon Resume 2023.pdf"
-      download="Michael Carillon Resume 2023"
-    >
-      <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined"> download </span>
-        <span>Resume PDF</span>
-      </div>
-    </LinkButton>
   </div>
 </template>
 
