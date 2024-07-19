@@ -5,7 +5,7 @@
       <div class="col-span-2">
         <ul class="mb-4">
           <li
-            v-for="(experience, index) in experiences"
+            v-for="(experience, index) in displayedExperiences"
             :key="experience.employer"
           >
             <button
@@ -45,7 +45,13 @@ import SectionHeading from '@/components/shared/SectionHeading.vue';
 import type { Experience } from '@/models/experience';
 
 const experiences = ref<Experience[]>(experiencesData);
-const selectedIndex = ref<number>(experiences.value.length - 1);
+const selectedIndex = ref<number>(0);
+
+const displayedExperiences = computed<Experience[]>(() =>
+  experiences.value.sort(
+    (a, b) => Date.parse(b.startDate) - Date.parse(a.startDate)
+  )
+);
 
 const selectedExperience = computed<Experience>(
   () => experiences.value[selectedIndex.value]
