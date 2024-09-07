@@ -47,11 +47,21 @@ import type { Experience } from '@/models/experience';
 const experiences = ref<Experience[]>(experiencesData);
 const selectedIndex = ref<number>(0);
 
-const displayedExperiences = computed<Experience[]>(() =>
+const displayedExperiences = computed<Experience[]>(() => {
   experiences.value.sort(
-    (a, b) => Date.parse(b.startDate) - Date.parse(a.startDate)
-  )
-);
+    (a, b) =>
+      Date.parse(b.positions[0].startDate) -
+      Date.parse(a.positions[0].startDate)
+  );
+
+  experiences.value.forEach((experience) => {
+    experience.positions.sort(
+      (a, b) => Date.parse(b.startDate) - Date.parse(a.startDate)
+    );
+  });
+
+  return experiences.value;
+});
 
 const selectedExperience = computed<Experience>(
   () => experiences.value[selectedIndex.value]

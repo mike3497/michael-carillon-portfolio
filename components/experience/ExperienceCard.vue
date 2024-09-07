@@ -1,40 +1,48 @@
 <template>
   <div class="bg-zinc-100 p-4 border-2 border-black">
-    <div class="mb-4">
-      <p>{{ experience.employer }}</p>
-      <h1 class="font-bold text-lg">{{ experience.jobTitle }}</h1>
-      <p>{{ startDate }} - {{ endDate }} ({{ timeElapsed }})</p>
+    <p class="mb-2">{{ experience.employer }}</p>
+    <div class="flex flex-col gap-4">
+      <div v-for="position in experience.positions" class="flex flex-col gap-2">
+        <header>
+          <h1 class="font-bold text-lg">{{ position.jobTitle }}</h1>
+          <p>
+            {{ getStartDate(position) }} - {{ getEndDate(position) }} ({{
+              getTimeElapsed(position)
+            }})
+          </p>
+        </header>
+        <div v-if="position.content" v-html="position.content"></div>
+      </div>
     </div>
-    <div v-html="experience.content"></div>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { Experience } from '@/models/experience';
+import type { Experience, Position } from '@/models/experience';
 import dayjs from 'dayjs';
 
-const props = defineProps({
+defineProps({
   experience: {
     type: Object as PropType<Experience>,
     required: true,
   },
 });
 
-const startDate = computed<string>(() => {
-  return dayjs(props.experience.startDate).format('MMMM YYYY');
-});
+const getStartDate = (position: Position) => {
+  return dayjs(position.startDate).format('MMMM YYYY');
+};
 
-const endDate = computed<string>(() => {
-  if (!props.experience.endDate) {
+const getEndDate = (position: Position) => {
+  if (!position.endDate) {
     return 'Present';
   }
 
-  return dayjs(props.experience.endDate).format('MMMM YYYY');
-});
+  return dayjs(position.endDate).format('MMMM YYYY');
+};
 
-const timeElapsed = computed<string>(() => {
-  const startDate = dayjs(props.experience.startDate);
-  const endDate = dayjs(props.experience.endDate);
+const getTimeElapsed = (position: Position) => {
+  const startDate = dayjs(position.startDate);
+  const endDate = dayjs(position.endDate);
 
   const years = endDate.diff(startDate, 'year');
   const months = endDate.diff(startDate, 'month') % 12;
@@ -50,5 +58,5 @@ const timeElapsed = computed<string>(() => {
   }
 
   return result.join(', ');
-});
+};
 </script>
