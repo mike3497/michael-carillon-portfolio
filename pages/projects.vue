@@ -1,5 +1,5 @@
 <template>
-  <div id="my-projects" class="container my-4">
+  <div class="container my-4">
     <SectionHeading>//Projects</SectionHeading>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <ProjectCard
