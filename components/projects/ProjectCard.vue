@@ -1,5 +1,7 @@
 <template>
-  <article class="flex flex-col flex-1 bg-zinc-100 border-2 border-black">
+  <article
+    class="flex flex-col flex-1 bg-zinc-100 border-2 border-black shadow-solid"
+  >
     <a :href="project.link">
       <img
         :src="project.image"
