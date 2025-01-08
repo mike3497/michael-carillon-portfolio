@@ -16,7 +16,7 @@
           </div>
         </div>
         <img
-          class="object-cover object-center aspect-square border-2 border-black"
+          class="shadow-solid object-cover object-center aspect-square border-2 border-black"
           src="/images/RDPMC_7864.jpg"
           alt="Michael Carillon Headshot"
         />
@@ -54,8 +54,11 @@
       </div>
     </div>
     <div class="flex flex-col gap-4">
-      <img class="object-cover aspect-square" src="/images/Engagement-27.jpg" />
-      <img class="object-cover aspect-square" src="/images/Engagement-67.jpg" />
+      <img
+        class="shadow-solid object-cover object-bottom aspect-square border-2 border-black"
+        src="/images/wedding-photo.jpg"
+        alt="Michael and Katherine Carillon Wedding Photo"
+      />
     </div>
   </div>
 </template>
