@@ -20,6 +20,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        solid: '4px 4px 0 0 rgb(0 0 0)',
+      },
       fontFamily: {
         sans: ['Roboto Mono'],
       },
