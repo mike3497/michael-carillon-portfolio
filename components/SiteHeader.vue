@@ -1,5 +1,7 @@
 <template>
-  <header class="bg-white text-black border-b-4 border-black sticky top-0 z-50">
+  <header
+    class="bg-zinc-100 text-black border-b-4 border-black sticky top-0 z-50"
+  >
     <nav class="container flex flex-row items-center justify-between h-16">
       <div>
         <NuxtLink class="font-bold" to="/">
