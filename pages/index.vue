@@ -3,7 +3,7 @@
     class="bg-blue-600 text-white py-8 border-bottom bottom-2 border-b-black"
   >
     <div class="container">
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="flex flex-col justify-center gap-1">
           <h3>Hi, I am</h3>
           <h1 class="font-bold uppercase text-4xl">Michael Carillon</h1>
