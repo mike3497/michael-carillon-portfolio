@@ -1,12 +1,10 @@
 <template>
-  <TheHeader />
-  <AboutMe />
-  <MyExperience />
-  <MyProjects />
-  <TheFooter />
+  <SiteHeader />
+  <NuxtPage />
+  <SiteFooter />
 </template>
 
 <script setup lang="ts">
-import MyExperience from '~/components/experience/MyExperience.vue';
-import MyProjects from '~/components/projects/MyProjects.vue';
+import SiteFooter from '@/components/SiteFooter.vue';
+import SiteHeader from '@/components/SiteHeader.vue';
 </script>

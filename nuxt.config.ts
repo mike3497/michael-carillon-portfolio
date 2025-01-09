@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@vueuse/motion/nuxt'],
+  modules: ['@vueuse/nuxt'],
   app: {
     head: {
       htmlAttrs: {

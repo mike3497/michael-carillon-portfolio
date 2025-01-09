@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-100 p-4 border-2 border-black">
+  <div class="bg-zinc-100 p-4 border-2 border-black shadow-solid">
     <p class="mb-2">{{ experience.employer }}</p>
     <div class="flex flex-col gap-4">
       <div v-for="position in experience.positions" class="flex flex-col gap-2">
