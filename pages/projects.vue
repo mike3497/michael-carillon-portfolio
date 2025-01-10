@@ -29,15 +29,22 @@ const projects: Project[] = [
     description: `An app for my friends and I to pick who we'll think will win college football games.`,
     github: 'https://github.com/mike3497/cfb-pickem-app',
     image: '/images/projects/my_cfb_pickem.png',
-    link: 'https://my-cfb-pickem.netlify.app/',
     title: `My CFB Pick'em`,
   },
   {
-    description: `An app to generate color palettes inspired by Coolors.`,
+    description: 'An app to generate color palettes inspired by Coolors.',
     github: 'https://github.com/mike3497/color-app',
     image: '/images/projects/colorify.png',
     link: 'https://endearing-pegasus-f5063a.netlify.app/',
     title: 'Colorify',
+  },
+  {
+    description:
+      'A JavaScript library for calculating color contrast ratios and WCAG conformance.',
+    github: 'https://github.com/mike3497/color-contrast-ratio',
+    image: '/images/projects/npm_logo.jpg',
+    link: 'https://www.npmjs.com/package/color-contrast-ratio',
+    title: 'color-contrast-ratio',
   },
 ];
 </script>
