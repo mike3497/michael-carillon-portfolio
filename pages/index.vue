@@ -30,15 +30,15 @@
         <p>Hey, I am Michael Carillon.</p>
         <p>
           I'm just a web developer with over {{ yearsOfExperience }} years of
-          professional experience who's all about coding and living in
-          Cleveland, OH.
+          professional experience who's all about coding and living in Bay
+          Village, OH.
         </p>
         <p>
           My web development journey started because I was super into video game
           development when I was younger. I ended up at The University of Akron,
-          where I studied Computer Information Systems. They taught me some
-          programming basics, which turned out to be a big help when I got into
-          web development.
+          where I studied Computer Information Systems. This taught me the
+          basics of programming, which turned out to be a big help when I got
+          into web development.
         </p>
         <p>
           In my free time, you'll usually find me hanging out with my awesome
@@ -47,9 +47,9 @@
           different breweries.
         </p>
         <p>
-          Oh, and I can't forget my buddy Brutus, a {{ brutusAge }}-year-old
-          Bluetick Coonhound mix. We go on hikes and strolls together, and he's
-          basically my sidekick for all things outdoorsy.
+          I can't forget my buddy Brutus, a {{ brutusAge }}-year-old Bluetick
+          Coonhound mix. We go on hikes and strolls together, and he's basically
+          my sidekick for all things outdoorsy.
         </p>
       </div>
     </div>
