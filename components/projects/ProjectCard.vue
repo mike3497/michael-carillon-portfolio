@@ -2,23 +2,27 @@
   <article
     class="flex flex-col flex-1 bg-zinc-100 border-2 border-black shadow-solid"
   >
-    <a :href="project.link">
-      <img
-        :src="project.image"
-        alt="Project Image"
-        class="w-full border-b-2 border-black"
-      />
-    </a>
+    <img
+      :src="project.image"
+      alt="Project Image"
+      class="w-full border-b-2 border-black"
+    />
     <section class="flex flex-col flex-1 justify-between p-4">
       <header>
         <h2 class="font-bold text-lg">
-          <a class="hover:underline" :href="project.link">
-            {{ project.title }}
-          </a>
+          {{ project.title }}
         </h2>
         <p class="mb-4">{{ project.description }}</p>
       </header>
-      <footer>
+      <footer class="flex flex-row gap-4">
+        <LinkButton
+          v-if="project.link"
+          class="bg-blue-600 text-white border-2 border-black hover:bg-black active:scale-105 transition-all px-4 py-2"
+          :href="project.link"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>
+          <span>Link</span>
+        </LinkButton>
         <LinkButton
           class="bg-blue-600 text-white border-2 border-black hover:bg-black active:scale-105 transition-all px-4 py-2"
           :href="project.github"
