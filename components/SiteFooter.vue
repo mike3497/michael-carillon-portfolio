@@ -1,13 +1,5 @@
 <template>
-  <footer class="bg-zinc-900 text-white py-4">
-    <!-- <ul class="flex justify-center gap-4 mb-4">
-      <li>
-        <a href="mailto:mcarillon97@gmail.com" class="flex items-center">
-          <i class="fa-solid fa-envelope mr-2"></i>
-          <span>mcarillon97@gmail.com</span>
-        </a>
-      </li>
-    </ul> -->
+  <footer class="bg-zinc-800 text-zinc-100 border-t-4 border-zinc-900 py-8">
     <ul class="flex flex-row gap-4 justify-center mb-4">
       <li>
         <CircleIconLink

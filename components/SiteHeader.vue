@@ -1,6 +1,6 @@
 <template>
-  <header ref="target" class="bg-zinc-100 text-black sticky top-0 z-5">
-    <div class="border-b-2 border-black">
+  <header ref="target" class="bg-zinc-100 text-zinc-900 sticky top-0 z-5">
+    <div class="border-b-4 border-black">
       <div class="container flex flex-row items-center justify-between h-16">
         <NuxtLink class="font-bold" to="/">
           &lt;&gt;Michael Carillon&lt;/&gt;
@@ -42,7 +42,7 @@
     <Transition>
       <div
         v-if="isMenuOpen"
-        class="sm:hidden bg-zinc-200 text-black p-4 border-b-2 border-black"
+        class="sm:hidden bg-zinc-200 text-zinc-900 p-4 border-b-2 border-black"
       >
         <nav class="flex flex-col items-center gap-4">
           <NuxtLink

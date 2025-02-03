@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-blue-600 text-white py-8 border-bottom bottom-2 border-b-black"
-  >
+  <div class="bg-blue-600 text-white py-8 border-b-2 border-b-black">
     <div class="container">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="flex flex-col justify-center gap-1">
@@ -23,43 +21,31 @@
       </div>
     </div>
   </div>
-  <div class="container py-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="container py-8 grid grid-cols-1 md:grid-cols-2 gap-4">
     <div>
       <SectionHeading>//About Me</SectionHeading>
-      <div class="prose">
-        <p>Hey, I am Michael Carillon.</p>
+      <div class="flex flex-col gap-2 leading-6">
         <p>
-          I'm just a web developer with over {{ yearsOfExperience }} years of
-          professional experience who's all about coding and living in Bay
-          Village, OH.
+          I'm a web developer with over {{ yearsOfExperience }} years of
+          professional experience. I'm passionate about coding and live in Bay
+          Village, Ohio. My interest in web development grew from my early
+          fascination with video game development, which led me to study
+          Computer Information Systems at The University of Akron.
         </p>
         <p>
-          My web development journey started because I was super into video game
-          development when I was younger. I ended up at The University of Akron,
-          where I studied Computer Information Systems. This taught me the
-          basics of programming, which turned out to be a big help when I got
-          into web development.
-        </p>
-        <p>
-          In my free time, you'll usually find me hanging out with my awesome
-          wife, Katherine. We're both big fans of traveling and exploring,
-          whether it's checking out cool museums, hitting up parks, or sampling
-          different breweries.
-        </p>
-        <p>
-          I can't forget my buddy Brutus, a {{ brutusAge }}-year-old Bluetick
-          Coonhound mix. We go on hikes and strolls together, and he's basically
-          my sidekick for all things outdoorsy.
+          When I'm not coding, I enjoy spending time with my wife, Katherine. We
+          love traveling and exploring new places, from museums and parks to
+          local breweries. My other constant companion is Brutus, my
+          five-year-old Bluetick Coonhound mix. We're always up for a hike or
+          walk, and he's my go-to adventure buddy.
         </p>
       </div>
     </div>
-    <div class="flex flex-col gap-4">
-      <img
-        class="shadow-solid object-cover object-bottom aspect-square border-2 border-black"
-        src="/images/wedding-photo.jpg"
-        alt="Michael and Katherine Carillon Wedding Photo"
-      />
-    </div>
+    <img
+      class="shadow-solid object-cover object-bottom aspect-square border-2 border-black"
+      src="/images/wedding-photo.jpg"
+      alt="Michael and Katherine Carillon Wedding Photo"
+    />
   </div>
 </template>
 

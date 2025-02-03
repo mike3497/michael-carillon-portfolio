@@ -5,6 +5,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      bodyAttrs: {
+        class: 'bg-zinc-200 text-zinc-900',
+      },
       meta: [
         {
           name: 'description',
