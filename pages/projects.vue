@@ -1,7 +1,7 @@
 <template>
   <div class="container my-4">
     <SectionHeading>//Projects</SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <ProjectCard
         v-for="project in projects"
         :key="project.title"
@@ -19,17 +19,19 @@ import type { Project } from '@/models/project';
 const projects: Project[] = [
   {
     description:
-      'A site for my wedding to help share useful information with my guests.',
-    github: 'https://github.com/mike3497/carillon-wedding',
-    image: '/images/projects/carillon_wedding.png',
-    link: 'https://carillonwedding.netlify.app/',
-    title: 'Carillon Wedding',
+      'A basic CRUD web-app to practice creating a full-stack application. Built with Vue, NestJS, and PostgreSQL.',
+    github: 'https://github.com/mike3497/books-crud-app',
+    image: '/images/projects/books-crud-app.png',
+    link: 'https://books-crud-app.netlify.app/',
+    title: 'Books CRUD App',
   },
   {
-    description: `An app for my friends and I to pick who we'll think will win college football games.`,
-    github: 'https://github.com/mike3497/cfb-pickem-app',
-    image: '/images/projects/my_cfb_pickem.png',
-    title: `My CFB Pick'em`,
+    description:
+      'A site for my wedding to help share useful information with my guests.',
+    github: 'https://github.com/mike3497/carillon-wedding',
+    image: '/images/projects/wedding-website.png',
+    link: 'https://carillonwedding.netlify.app/',
+    title: 'Carillon Wedding',
   },
   {
     description: 'An app to generate color palettes inspired by Coolors.',
