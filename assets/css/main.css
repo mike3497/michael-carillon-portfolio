@@ -9,3 +9,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
 }
+
+[v-cloak] {
+  display: none;
+}

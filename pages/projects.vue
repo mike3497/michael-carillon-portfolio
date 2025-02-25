@@ -1,14 +1,16 @@
 <template>
-  <div class="container my-4">
-    <SectionHeading>//Projects</SectionHeading>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <ProjectCard
-        v-for="project in projects"
-        :key="project.title"
-        :project="project"
-      />
+  <NuxtLayout>
+    <div class="container my-4">
+      <SectionHeading>//Projects</SectionHeading>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <ProjectCard
+          v-for="project in projects"
+          :key="project.title"
+          :project="project"
+        />
+      </div>
     </div>
-  </div>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">

@@ -7,47 +7,25 @@
       &lt;&gt;Michael Carillon&lt;/&gt;
     </NuxtLink>
     <nav v-if="!small" class="flex gap-4">
-      <NuxtLink activeClass="font-bold" to="/">Home</NuxtLink>
-      <NuxtLink activeClass="font-bold" to="/experience">Experience</NuxtLink>
-      <NuxtLink activeClass="font-bold" to="/projects">Projects</NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/experience">Experience</NuxtLink>
+      <NuxtLink to="/projects">Projects</NuxtLink>
     </nav>
-    <BaseButton
-      v-if="small"
-      aria-label="Toggle navigation menu"
-      :aria-expanded="isMenuOpen.toString()"
-      @click="onMenuClick"
-    >
+    <BaseButton v-if="small" @click="onMenuClick">
       <i v-if="!isMenuOpen" class="fa-solid fa-bars"></i>
       <i v-else class="fa-solid fa-xmark"></i>
     </BaseButton>
     <Transition name="slide-in-right">
       <div
+        class="fixed top-16 right-0 w-64 h-svh bg-zinc-200 text-zinc-900 p-4 border-l-2 border-black z-20"
         v-if="isMenuOpen"
-        class="fixed top-16 right-0 w-64 h-svh bg-zinc-200 text-zinc-900 p-6 border-l-2 border-black z-20 shadow-lg"
-        role="navigation"
-        aria-label="mobile navigation"
       >
-        <nav class="flex flex-col items-start gap-4">
-          <NuxtLink
-            activeClass="font-bold text-lg"
-            to="/"
-            @click="onNuxtLinkClick"
-            >Home</NuxtLink
-          >
-          <hr class="w-full border-t border-zinc-300" />
-          <NuxtLink
-            activeClass="font-bold text-lg"
-            to="/experience"
-            @click="onNuxtLinkClick"
+        <nav class="flex flex-col items-center gap-4">
+          <NuxtLink to="/" @click="onNuxtLinkClick">Home</NuxtLink>
+          <NuxtLink to="/experience" @click="onNuxtLinkClick"
             >Experience</NuxtLink
           >
-          <hr class="w-full border-t border-zinc-300" />
-          <NuxtLink
-            activeClass="font-bold text-lg"
-            to="/projects"
-            @click="onNuxtLinkClick"
-            >Projects</NuxtLink
-          >
+          <NuxtLink to="/projects" @click="onNuxtLinkClick">Projects</NuxtLink>
         </nav>
       </div>
     </Transition>
@@ -55,7 +33,7 @@
   <Transition name="fade">
     <div
       v-if="isMenuOpen"
-      class="fixed left-0 top-0 w-full h-svh bg-black/50 backdrop-blur-sm z-10"
+      class="fixed left-0 top-0 w-full h-svh bg-black/50 z-10"
     ></div>
   </Transition>
 </template>
@@ -64,7 +42,7 @@
 import BaseButton from '@/components/shared/BaseButton.vue';
 import { breakpointsTailwind, onClickOutside } from '@vueuse/core';
 
-const breakpoints = useBreakpoints(breakpointsTailwind, { ssrWidth: 768 });
+const breakpoints = useBreakpoints(breakpointsTailwind);
 
 const isMenuOpen = ref<boolean>(false);
 const target = ref(null);
@@ -79,7 +57,7 @@ const onNuxtLinkClick = () => {
   isMenuOpen.value = false;
 };
 
-onClickOutside(target, () => {
+onClickOutside(target, (event) => {
   isMenuOpen.value = false;
 });
 </script>
