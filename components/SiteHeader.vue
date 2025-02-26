@@ -63,6 +63,7 @@
 <script setup lang="ts">
 import BaseButton from '@/components/shared/BaseButton.vue';
 import { breakpointsTailwind, onClickOutside } from '@vueuse/core';
+import { onUnmounted, ref, watch } from 'vue';
 
 const breakpoints = useBreakpoints(breakpointsTailwind, { ssrWidth: 768 });
 
@@ -81,6 +82,26 @@ const onNuxtLinkClick = () => {
 
 onClickOutside(target, () => {
   isMenuOpen.value = false;
+});
+
+const preventScroll = () => {
+  document.body.style.overflow = 'hidden';
+};
+
+const allowScroll = () => {
+  document.body.style.overflow = '';
+};
+
+watch(isMenuOpen, (newValue) => {
+  if (newValue) {
+    preventScroll();
+  } else {
+    allowScroll();
+  }
+});
+
+onUnmounted(() => {
+  allowScroll();
 });
 </script>
 
