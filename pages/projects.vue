@@ -23,7 +23,8 @@ const projects: Project[] = [
     description:
       'A basic CRUD web-app to practice creating a full-stack application. Built with Vue, NestJS, and PostgreSQL.',
     github: 'https://github.com/mike3497/books-crud-app',
-    image: '/images/projects/books-crud-app.png',
+    image:
+      'https://imagedelivery.net/TDyWoJyPOtWgr4wZSDioNA/1e055e54-79b3-43c6-6e58-f62e862fec00/public',
     link: 'https://books-crud-app.netlify.app/',
     title: 'Books CRUD App',
   },
@@ -31,14 +32,16 @@ const projects: Project[] = [
     description:
       'A site for my wedding to help share useful information with my guests.',
     github: 'https://github.com/mike3497/carillon-wedding',
-    image: '/images/projects/wedding-website.png',
+    image:
+      'https://imagedelivery.net/TDyWoJyPOtWgr4wZSDioNA/0d8507c9-07e1-4f64-d642-956553d4c100/public',
     link: 'https://carillonwedding.netlify.app/',
     title: 'Carillon Wedding',
   },
   {
     description: 'An app to generate color palettes inspired by Coolors.',
     github: 'https://github.com/mike3497/color-app',
-    image: '/images/projects/colorify.png',
+    image:
+      'https://imagedelivery.net/TDyWoJyPOtWgr4wZSDioNA/5bf8dfe1-7421-4cb5-d286-c78c9f47ce00/public',
     link: 'https://endearing-pegasus-f5063a.netlify.app/',
     title: 'Colorify',
   },
@@ -46,7 +49,8 @@ const projects: Project[] = [
     description:
       'A JavaScript library for calculating color contrast ratios and WCAG conformance.',
     github: 'https://github.com/mike3497/color-contrast-ratio',
-    image: '/images/projects/npm_logo.jpg',
+    image:
+      'https://imagedelivery.net/TDyWoJyPOtWgr4wZSDioNA/a6f71270-f1d0-4e0f-a962-630006376000/public',
     link: 'https://www.npmjs.com/package/color-contrast-ratio',
     title: 'color-contrast-ratio',
   },

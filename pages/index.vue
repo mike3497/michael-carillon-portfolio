@@ -16,7 +16,7 @@
           </div>
           <img
             class="shadow-solid object-cover object-center aspect-square border-2 border-black"
-            src="/images/RDPMC_7864.jpg"
+            src="https://imagedelivery.net/TDyWoJyPOtWgr4wZSDioNA/726d68af-4cdc-4506-0af8-2d508f6cc700/public"
             alt="Michael Carillon Headshot"
           />
         </div>
@@ -44,7 +44,7 @@
       </div>
       <img
         class="shadow-solid object-cover object-bottom aspect-square border-2 border-black"
-        src="/images/wedding-photo.jpg"
+        src="https://imagedelivery.net/TDyWoJyPOtWgr4wZSDioNA/50d88581-c4d8-4c4a-05ce-e915b9e58f00/public"
         alt="Michael and Katherine Carillon Wedding Photo"
       />
     </div>
