@@ -6,10 +6,15 @@
     <NuxtLink class="font-bold" to="/">
       &lt;&gt;Michael Carillon&lt;/&gt;
     </NuxtLink>
-    <nav v-if="!small" class="flex gap-4">
-      <NuxtLink activeClass="font-bold" to="/">Home</NuxtLink>
-      <NuxtLink activeClass="font-bold" to="/experience">Experience</NuxtLink>
-      <NuxtLink activeClass="font-bold" to="/projects">Projects</NuxtLink>
+    <nav v-if="!small" class="flex gap-8">
+      <NuxtLink
+        v-for="menuItem in menuItems"
+        :key="menuItem.name"
+        :to="menuItem.route"
+        activeClass="font-bold"
+      >
+        {{ menuItem.name }}
+      </NuxtLink>
     </nav>
     <BaseButton
       v-if="small"
@@ -23,31 +28,21 @@
     <Transition name="slide-in-right">
       <div
         v-if="isMenuOpen"
-        class="fixed top-16 right-0 w-64 h-svh bg-zinc-200 text-zinc-900 p-6 border-l-2 border-black z-20 shadow-lg"
+        class="fixed top-16 right-0 w-64 h-svh bg-zinc-200 text-zinc-900 border-l-2 border-black z-20 p-2"
         role="navigation"
         aria-label="mobile navigation"
       >
-        <nav class="flex flex-col items-start gap-4">
+        <nav class="flex flex-col items-start">
           <NuxtLink
-            activeClass="font-bold text-lg"
-            to="/"
+            v-for="menuItem in menuItems"
+            :key="menuItem.name"
+            :to="menuItem.route"
+            activeClass="bg-blue-600 text-white"
+            class="w-full p-4"
             @click="onNuxtLinkClick"
-            >Home</NuxtLink
           >
-          <hr class="w-full border-t border-zinc-300" />
-          <NuxtLink
-            activeClass="font-bold text-lg"
-            to="/experience"
-            @click="onNuxtLinkClick"
-            >Experience</NuxtLink
-          >
-          <hr class="w-full border-t border-zinc-300" />
-          <NuxtLink
-            activeClass="font-bold text-lg"
-            to="/projects"
-            @click="onNuxtLinkClick"
-            >Projects</NuxtLink
-          >
+            {{ menuItem.name }}
+          </NuxtLink>
         </nav>
       </div>
     </Transition>
@@ -64,6 +59,17 @@
 import BaseButton from '@/components/shared/BaseButton.vue';
 import { breakpointsTailwind, onClickOutside } from '@vueuse/core';
 import { onUnmounted, ref, watch } from 'vue';
+
+interface MenuItem {
+  name: string;
+  route: string;
+}
+
+const menuItems: MenuItem[] = [
+  { name: 'Home', route: '/' },
+  { name: 'Experience', route: '/experience' },
+  { name: 'Projects', route: '/projects' },
+];
 
 const breakpoints = useBreakpoints(breakpointsTailwind, { ssrWidth: 768 });
 
